@@ -25,13 +25,6 @@ class JSONRenderer(renderers.JSONRenderer):
     encoder_class = JSONEncoder
 
 
-class UnicodeJSONRenderer(renderers.UnicodeJSONRenderer):
-    """Renderer which serializes to JSON, and does not escape
-    Unicode characters.
-    """
-    encoder_class = JSONEncoder
-
-
 class JSONPRenderer(renderers.JSONPRenderer):
     """Renderer which serializes to JSON, wrapping the JSON output
     in a callback function.
