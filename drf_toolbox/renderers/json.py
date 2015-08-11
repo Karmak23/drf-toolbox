@@ -23,6 +23,3 @@ class JSONEncoder(encoders.JSONEncoder):
 class JSONRenderer(renderers.JSONRenderer):
     """Renderer which serializes to JSON."""
     encoder_class = JSONEncoder
-
-    """
-    encoder_class = JSONEncoder
